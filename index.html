@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <script src="./app.js" defer></script> -->
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headingContainer">
+            <h1 class="heading">budget application</h1>
+        </div>
+        <div class="boxes">
+            <div class="set-budget">
+                <div class="budgetHeadingContainer">
+                    <h3>BUDGET</h3>
+                </div>
+                <input type="number" placeholder="enter your budget" id="input-amount">
+                <input type="submit" value="set budget" id="enter-amount">
+            </div>
+
+
+            <div class="expense">
+                <div class="expenseHeadingContainer">
+                    <h3>EXPENSE</h3>
+                </div>
+                <div class="categoryContainer">
+                    <label for="p_title">category</label>
+                    <input type="text" value="" placeholder="enter product title" id="p_title">
+                </div>
+                <div class="amountContainer">
+                    <label for="p_amount">amount </label>
+                    <input type="number" placeholder="enter product amount" id="p_amount">
+                </div>
+                <div class="dateContainer">
+                    <label for="date-value">date</label>
+                    <input type="date" id="date-value">
+                </div>
+                <input type="submit" value="add expense" id="add_expense">
+            </div>
+        </div>
+
+
+        <div class="total-budget">
+            <div class="amount">
+                <h2>Total Amount</h2>
+                <h3 id="t_amount">0</h3>
+            </div>
+
+            <div class="amount">
+                <h2>Expense</h2>
+                <h3 id="expense-cost">0</h3>
+            </div>
+
+            <div class="amount">
+                <h2>Balance</h2>
+                <h3 id="balance-cost">0</h3>
+            </div>
+        </div>
+
+
+        <div id="expense-list">
+            <div class="expenseListHeading">
+                <h1>Expenses</h1>
+            </div>
+            <div class="expenseListItems">
+                
+                <h2 id="P">category</h2>
+                <h2 id="A">amount</h2>
+                <h2 id="D">date</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
